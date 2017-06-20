@@ -357,9 +357,6 @@
     <ClCompile Include="..\silk\float\k2a_FLP.c">
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
-    <ClCompile Include="..\silk\float\levinsondurbin_FLP.c">
-      <Filter>Source Files\silk\float</Filter>
-    </ClCompile>
     <ClCompile Include="..\silk\float\LPC_analysis_filter_FLP.c">
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
@@ -378,9 +375,6 @@
     <ClCompile Include="..\silk\float\pitch_analysis_core_FLP.c">
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
-    <ClCompile Include="..\silk\float\prefilter_FLP.c">
-      <Filter>Source Files\silk\float</Filter>
-    </ClCompile>
     <ClCompile Include="..\silk\float\process_gains_FLP.c">
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
@@ -397,9 +391,6 @@
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
     <ClCompile Include="..\silk\float\schur_FLP.c">
-      <Filter>Source Files\silk\float</Filter>
-    </ClCompile>
-    <ClCompile Include="..\silk\float\solve_LS_FLP.c">
       <Filter>Source Files\silk\float</Filter>
     </ClCompile>
     <ClCompile Include="..\silk\float\sort_FLP.c">
@@ -485,6 +476,12 @@
     </ClCompile>
     <ClCompile Include="..\silk\x86\VAD_sse.c">
       <Filter>Source Files\silk\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\LPC_fit.c">
+      <Filter>Source Files\silk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\celt\x86\vq_sse2.c">
+      <Filter>Source Files\celt\x86</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -676,6 +673,9 @@
     </ClInclude>
     <ClInclude Include="..\silk\x86\SigProc_FIX_sse.h">
       <Filter>Header Files\silk\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\celt\x86\vq_sse.h">
+      <Filter>Header Files\celt\x86</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
