@@ -244,12 +244,12 @@
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -260,8 +260,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -271,8 +271,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -300,12 +300,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -316,8 +316,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -327,8 +327,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -357,12 +357,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -373,8 +373,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -384,8 +384,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -413,12 +413,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -429,8 +429,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -440,8 +440,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -478,12 +478,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -494,8 +494,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -505,8 +505,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -543,12 +543,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -559,8 +559,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -570,8 +570,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -608,12 +608,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -624,8 +624,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -635,8 +635,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -673,12 +673,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -689,8 +689,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -700,8 +700,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -738,12 +738,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -754,8 +754,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -765,8 +765,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
@@ -802,12 +802,12 @@ del /f /q $(OutDir)\licenses\opus.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\opus
-copy ..\include\opus.h $(OutDir)\include\opus
-copy ..\include\opus_defines.h $(OutDir)\include\opus
-copy ..\include\opus_multistream.h $(OutDir)\include\opus
-copy ..\include\opus_types.h $(OutDir)\include\opus
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\opus
+copy ..\include\opus.h "$(OutDir)"\include\opus
+copy ..\include\opus_defines.h "$(OutDir)"\include\opus
+copy ..\include\opus_multistream.h "$(OutDir)"\include\opus
+copy ..\include\opus_types.h "$(OutDir)"\include\opus
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\opus.txt</Command>
     </PostBuildEvent>
@@ -818,8 +818,8 @@ del ..\config.h
 if exist ..\version.h (
 del ..\version.h
 )
-if exist $(OutDir)\include\opus (
-rd /s /q $(OutDir)\include\opus
+if exist "$(OutDir)"\include\opus (
+rd /s /q "$(OutDir)"\include\opus
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -829,8 +829,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\opus (
-rmdir /s /q $(OutDir)\include\opus
+      <Command>if exist "$(OutDir)"\include\opus (
+rmdir /s /q "$(OutDir)"\include\opus
 )
 if exist $(OutDir)\licenses\opus.txt (
 del /f /q $(OutDir)\licenses\opus.txt
