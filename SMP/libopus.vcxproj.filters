@@ -43,6 +43,9 @@
     <Filter Include="Source Files\silk\float">
       <UniqueIdentifier>{41b7ccb5-1511-40b0-b27e-d169ec36a291}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\src">
+      <UniqueIdentifier>{f6c814f2-9fec-43b3-921e-83081d6a76b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\opus_multistream.c">
@@ -450,9 +453,6 @@
     <ClCompile Include="..\celt\x86\x86cpu.c">
       <Filter>Source Files\celt\x86</Filter>
     </ClCompile>
-    <ClCompile Include="..\celt\x86\celt_lpc_sse.c">
-      <Filter>Source Files\celt\x86</Filter>
-    </ClCompile>
     <ClCompile Include="..\celt\x86\pitch_sse.c">
       <Filter>Source Files\celt\x86</Filter>
     </ClCompile>
@@ -462,19 +462,7 @@
     <ClCompile Include="..\celt\x86\pitch_sse4_1.c">
       <Filter>Source Files\celt\x86</Filter>
     </ClCompile>
-    <ClCompile Include="..\silk\x86\VQ_WMat_EC_sse.c">
-      <Filter>Source Files\silk\x86</Filter>
-    </ClCompile>
     <ClCompile Include="..\silk\x86\x86_silk_map.c">
-      <Filter>Source Files\silk\x86</Filter>
-    </ClCompile>
-    <ClCompile Include="..\silk\x86\NSQ_del_dec_sse.c">
-      <Filter>Source Files\silk\x86</Filter>
-    </ClCompile>
-    <ClCompile Include="..\silk\x86\NSQ_sse.c">
-      <Filter>Source Files\silk\x86</Filter>
-    </ClCompile>
-    <ClCompile Include="..\silk\x86\VAD_sse.c">
       <Filter>Source Files\silk\x86</Filter>
     </ClCompile>
     <ClCompile Include="..\silk\LPC_fit.c">
@@ -482,6 +470,30 @@
     </ClCompile>
     <ClCompile Include="..\celt\x86\vq_sse2.c">
       <Filter>Source Files\celt\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mapping_matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\opus_projection_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\opus_projection_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\celt\x86\celt_lpc_sse4_1.c">
+      <Filter>Source Files\celt\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\x86\NSQ_del_dec_sse4_1.c">
+      <Filter>Source Files\silk\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\x86\NSQ_sse4_1.c">
+      <Filter>Source Files\silk\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\x86\VAD_sse4_1.c">
+      <Filter>Source Files\silk\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\x86\VQ_WMat_EC_sse4_1.c">
+      <Filter>Source Files\silk\x86</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -676,6 +688,21 @@
     </ClInclude>
     <ClInclude Include="..\celt\x86\vq_sse.h">
       <Filter>Header Files\celt\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opus_projection.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\analysis.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mapping_matrix.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mlp.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tansig_table.h">
+      <Filter>Header Files\src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
