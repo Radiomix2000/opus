@@ -16,7 +16,7 @@ A codec for interactive speech and audio transmission over the Internet. [https:
 
 ## Downloads
 
-Development libraries are available from the [releases](https://github.com/ShiftMediaProject/opus/releases) page. These libraries are available for each supported Visual Studio version (2013, 2015 or 2017) with a different download for each version. Each download contains both static and dynamic libraries to choose from in both 32bit and 64bit versions.
+Development libraries are available from the [releases](https://github.com/ShiftMediaProject/opus/releases) page. These libraries are available for each supported Visual Studio version with a different download for each version. Each download contains both static and dynamic libraries to choose from in both 32bit and 64bit versions.
 
 ## Code
 
